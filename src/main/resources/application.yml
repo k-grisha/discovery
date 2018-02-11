@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: gr-discovery
+server:
+  port: ${discovery.port:8761}
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://${discovery.host:localhost}:${discovery.port:8761}/eureka
+#management:
+#  security:
+#    enabled: false
