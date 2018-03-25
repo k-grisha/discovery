@@ -8,7 +8,7 @@ eureka:
     registerWithEureka: ${selfRegistred:false}
     fetchRegistry: false
     service-url:
-      defaultZone: http://${DISCOVERY_HOST:localhost}:${DISCOVERY_PORT:8761}/eureka
+      defaultZone: ${DISCOVERY_HOST:http://proga.pw:8761/eureka}
 management:
   security:
     enabled: ${actuator.protected:true}
